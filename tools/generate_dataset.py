@@ -1,13 +1,32 @@
-customers.csv
+"""
+===========================================================
+60 Days PySpark & Spark SQL Challenge
+Dataset Generator
 
-products.csv
+Author : Vishal Kumar
+Company: LakeMart Retail Corporation
+===========================================================
+"""
 
-stores.csv
+from config import *
 
-orders.csv
+import pandas as pd
+import numpy as np
+from faker import Faker
+import random
 
-order_items.csv
+fake = Faker("en_IN")
 
-payments.csv
+print("=" * 60)
+print("LakeMart Retail Dataset Generator")
+print("=" * 60)
 
-inventory.csv
+print(f"Customers   : {CUSTOMERS}")
+print(f"Products    : {PRODUCTS}")
+print(f"Stores      : {STORES}")
+print(f"Orders      : {ORDERS}")
+print(f"Order Items : {ORDER_ITEMS}")
+print(f"Payments    : {PAYMENTS}")
+print(f"Inventory   : {INVENTORY}")
+
+print("\nDataset generation will start here...")
